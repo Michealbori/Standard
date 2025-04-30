@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - MyLogo</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="style.css"> <!-- Shared styles like navbar, footer -->
+  <link rel="stylesheet" href="About.css"> <!-- About-specific styling -->
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="#home">MyLogo</a>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="nav-links desktop-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Service.html">Services</a></li>
+    </ul>
+
+    <!-- Buttons (Sign Up & Login) -->
+    <div class="buttons desktop-buttons">
+      <button class="btn login-btn">Login</button>
+      <button class="btn signup-btn">Sign Up</button>
+    </div>
+
+    <!-- Hamburger Icon (Mobile) -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul class="nav-links mobile-menu" id="mobile-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Service.html">Services</a></li>
+      <li class="mobile-buttons">
+        <!-- <button class="btn login-btn">Login</button>
+        <button class="btn signup-btn">Sign Up</button> -->
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+        <h1>About Us</h1>
+        <p>Learn more about our mission, values, and the team behind MyLogo.</p>
+      </div>
+    </section>
+
+    <!-- Our Mission -->
+    <section class="about-section mission-section" id="mission" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <h2>Our Mission</h2>
+        <p>
+          At MyLogo, our mission is to empower businesses and individuals with innovative solutions that drive growth and success. We strive to deliver exceptional value through cutting-edge technology, creative design, and unparalleled customer service.
+        </p>
+      </div>
+      <div data-aos="fade-left" data-aos-delay="300">
+        <img src="https://i.pinimg.com/736x/5f/05/a5/5f05a58cb23997aa103ac8856532c415.jpg" alt="Our Mission">
+      </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="about-section values-section" id="values" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <h2>Our Values</h2>
+        <p>
+          Our core values guide everything we do. We believe in transparency, integrity, collaboration, and innovation. These principles help us build trust with our clients and foster long-lasting relationships.
+        </p>
+        <div class="values-grid-container">
+          <section class="values-grid">
+            <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+              <img src="https://img.icons8.com/?size=100&id=121704&format=png&color=000000" alt="Innovation Icon">
+              <h3>Innovation</h3>
+              <p>We embrace creativity and new ideas to stay ahead in the industry.</p>
+            </div>
+            <div class="value-card" data-aos="fade-up" data-aos-delay="400">
+              <img src="https://img.icons8.com/?size=100&id=109679&format=png&color=000000" alt="Excellence Icon">
+              <h3>Excellence</h3>
+              <p>We are committed to delivering high-quality results every time.</p>
+            </div>
+          </section>
+
+          <section class="values-grid">
+            <div class="value-card" data-aos="fade-up" data-aos-delay="600">
+              <img src="https://img.icons8.com/?size=100&id=91244&format=png&color=000000" alt="Customer-Centric Icon">
+              <h3>Customer-Centric</h3>
+              <p>Your satisfaction is our top priority.</p>
+            </div>
+            <div class="value-card" data-aos="fade-up" data-aos-delay="800">
+              <img src="https://img.icons8.com/?size=100&id=11881&format=png&color=000000" alt="Collaboration Icon">
+              <h3>Collaboration</h3>
+              <p>We work together as a team to achieve shared goals.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Team -->
+    <section class="about-section team-section" id="team" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <h2>Our Team</h2>
+        <p>
+          Behind every successful project is a talented team of professionals. At MyLogo, our team consists of experts in web development, graphic design, digital marketing, and customer support. Together, we bring your vision to life.
+        </p>
+        <div class="team-members">
+          <div class="member-card" data-aos="flip-left" data-aos-delay="200">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="John Doe">
+            <h4>John Doe</h4>
+            <p>CEO & Founder</p>
+          </div>
+          <div class="member-card" data-aos="flip-left" data-aos-delay="400">
+            <img src="https://randomuser.me/api/portraits/women/34.jpg" alt="Jane Smith">
+            <h4>Jane Smith</h4>
+            <p>Creative Director</p>
+          </div>
+          <div class="member-card" data-aos="flip-left" data-aos-delay="600">
+            <img src="https://randomuser.me/api/portraits/men/23.jpg" alt="Alex Johnson">
+            <h4>Alex Johnson</h4>
+            <p>Lead Developer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add extra scroll space for testing 
+    <div style="height: 1200px;"></div>-->
+  </main>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top-btn">↑</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Email: info@example.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/facebook-new.png" alt="Facebook"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/instagram-new.png" alt="Instagram"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/twitter.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 MyLogo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

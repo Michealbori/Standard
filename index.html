@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Responsive Navbar</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Montserrat&display=swap" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet"/>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="#home">MyLogo</a>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="nav-links desktop-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Service.html">Services</a></li>
+    </ul>
+
+    <!-- Buttons (Sign Up & Login) -->
+    <div class="buttons desktop-buttons">
+      <button class="btn login-btn">Login</button>
+      <button class="btn signup-btn">Sign Up</button>
+    </div>
+
+    <!-- Hamburger Icon (Mobile) -->
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul class="nav-links mobile-menu" id="mobile-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="Service.html">Services</a></li>
+      <li class="mobile-buttons">
+        <!-- <button class="btn login-btn">Login</button>
+        <button class="btn signup-btn">Sign Up</button> -->
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <div class="Hero-Text" id="home" data-aos="fade-up" data-aos-duration="1000">
+      <h1>Welcome to My Website</h1>
+      <p>This is an example of a modern responsive navigation bar.</p>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about" data-aos="fade-up" data-aos-duration="1000">
+      <h6 class="AboutHeader">About Us</h6>
+      <section class="About-content">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo at expedita aliquam, dolorum necessitatibus magnam obcaecati autem? Itaque molestias, amet, laborum ipsum maiores asperiores id, tempora vel optio nulla placeat.
+        </p>
+        <img src="https://i.pinimg.com/736x/5f/05/a5/5f05a58cb23997aa103ac8856532c415.jpg" alt="About Us Image">
+      </section>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services" id="services" data-aos="fade-up" data-aos-duration="1000">
+      <h2>Our Services</h2>
+      <div class="service-cards">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://img.icons8.com/?size=100&id=TGWYInTBVGDD&format=png&color=000000" alt="Web Development">
+          <h3>Web Development</h3>
+          <p>We build stunning and functional websites tailored to your needs.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+          <img src="https://img.icons8.com/?size=100&id=3jVDVzUKvlPe&format=png&color=000000" alt="Graphic Design">
+          <h3>Graphic Design</h3>
+          <p>Creative designs that make your brand stand out.</p>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="600">
+          <img src="https://img.icons8.com/?size=100&id=xOxAdcl6DVo2&format=png&color=000000" alt="Digital Marketing">
+          <h3>Digital Marketing</h3>
+          <p>Boost your online presence with our marketing strategies.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="1000">
+      <h2>Our Portfolio</h2>
+      <div class="portfolio-items">
+        <div class="item" data-aos="fade-up" data-aos-delay="200">
+          <img src="https://i.pinimg.com/736x/9b/7c/5c/9b7c5c24152d10d8c3df2b8e75198c9c.jpg" alt="Project 1">
+          <h3>Project 1</h3>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-delay="400">
+          <img src="https://i.pinimg.com/736x/15/06/c1/1506c13b6cf24d97af453b80ce86d88a.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+        </div>
+        <div class="item" data-aos="fade-up" data-aos-delay="600">
+          <img src="https://i.pinimg.com/736x/02/da/bc/02dabcf2eff2708f36399cdf091e6265.jpg" alt="Project 3">
+          <h3>Project 3</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials" data-aos="fade-up" data-aos-duration="1000">
+      <h2>What Our Clients Say</h2>
+      <div class="testimonial-cards">
+        <div class="card" data-aos="fade-up" data-aos-delay="200">
+          <p>"Amazing service! The team delivered exactly what I wanted."</p>
+          <h4>- John Doe</h4>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="400">
+          <p>"Professional and creative. Highly recommend!"</p>
+          <h4>- Jane Smith</h4>
+        </div>
+        <div class="card" data-aos="fade-up" data-aos-delay="600">
+          <p>"The best in the business. Quick and reliable."</p>
+          <h4>- Alex Johnson</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact" data-aos="fade-up" data-aos-duration="1000">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn">↑</button>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <p>Email: info@example.com</p>
+        <p>Phone: +123 456 7890</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/facebook-new.png" alt="Facebook"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/instagram-new.png" alt="Instagram"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/30/twitter.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 MyLogo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
